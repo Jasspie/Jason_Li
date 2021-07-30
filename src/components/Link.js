@@ -14,16 +14,15 @@ const StyledLink = styled.a`
     bottom: -0.25rem;
     left: 0;
     background-color: black;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+    transform-origin: bottom left;
+    transition: transform 0.15s ease-out;
   }
   &:hover::after {
     transform: scaleX(1);
-    transform-origin: bottom right;
+    transform-origin: bottom left;
     }
   }
 `
-
 export default function Link({ children, other }) {
   return <StyledLink {...other}>{children}</StyledLink>
 }
