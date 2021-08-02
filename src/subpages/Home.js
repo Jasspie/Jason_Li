@@ -7,10 +7,14 @@ export default function Home() {
   return (
     <>
       <Row>
-        <Col lg={5} className="m-auto">
+        <Col
+          lg={5}
+          className="m-auto"
+          // style={{ border: "5px solid black", paddingBottom: "300px" }}
+        >
           <Name />
         </Col>
-        <Col lg={5} className="m-auto">
+        <Col lg={5} className="m-auto py-5">
           <Profile />
         </Col>
       </Row>
