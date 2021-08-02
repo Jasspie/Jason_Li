@@ -5,7 +5,7 @@ import { IconContext } from "react-icons"
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa"
 
 const Rectangle = styled(motion.div)`
-  background-color: #9a9a9a;
+  background-color: ${({ theme }) => theme.rectangle};
   height: 3px;
   display: inline-block;
   margin-right: 1rem;
@@ -21,7 +21,7 @@ const Instagram = styled(motion(FaInstagram))`
 const Github = styled(motion(FaGithub))`
   transition: 0.3s ease-out;
   &:hover {
-    fill: #010101;
+    fill: ${({ theme }) => theme.text};
     transition: 0.3s ease-out;
     cursor: pointer;
   }
