@@ -21,13 +21,13 @@ export default function About() {
     allStrapiAbout: { nodes },
   } = useStaticQuery(query)
 
-  console.log(nodes[0])
+  // console.log(nodes[0])
 
   return (
     <>
       <Row className="mb-4">
         <Col lg={7} className="mx-auto">
-          <Heading>About</Heading>
+          <Heading>About Me</Heading>
         </Col>
       </Row>
       <Row className="mb-3">

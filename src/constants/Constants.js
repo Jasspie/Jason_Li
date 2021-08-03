@@ -15,6 +15,10 @@ export const SKILLS = [
   {
     tech: [
       {
+        name: "Python",
+        logo: images["python.png"].default,
+      },
+      {
         name: "JavaScript",
         logo: images["javascript.png"].default,
       },
@@ -33,10 +37,6 @@ export const SKILLS = [
       {
         name: "CSS",
         logo: images["css.png"].default,
-      },
-      {
-        name: "Python",
-        logo: images["python.png"].default,
       },
       {
         name: "Java",

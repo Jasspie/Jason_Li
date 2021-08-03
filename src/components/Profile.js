@@ -49,7 +49,7 @@ const bg = {
   animate: {
     width: "0%",
     transition: {
-      delay: 4,
+      delay: 3.8,
       duration: 0.5,
       ease: "easeInOut",
     },
@@ -63,7 +63,7 @@ const photo = {
   animate: {
     transform: "scale(1.0)",
     transition: {
-      delay: 3.7,
+      delay: 3.5,
       duration: 1,
       ease: "easeInOut",
     },

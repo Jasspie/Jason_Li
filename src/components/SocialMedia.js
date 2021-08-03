@@ -2,7 +2,7 @@ import React from "react"
 import { motion } from "framer-motion"
 import styled from "styled-components"
 import { IconContext } from "react-icons"
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa"
+import { FaGithub, FaInstagram, FaLinkedin, FaEnvelope } from "react-icons/fa"
 
 const Rectangle = styled(motion.div)`
   background-color: ${({ theme }) => theme.rectangle};
@@ -34,6 +34,16 @@ const Linkedin = styled(motion(FaLinkedin))`
     cursor: pointer;
   }
 `
+
+const Email = styled(motion(FaEnvelope))`
+  transition: 0.3s ease-out;
+  &:hover {
+    fill: #d93025;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+  }
+`
+
 const iconVariants = {
   initial: {
     opacity: 0,
@@ -42,20 +52,20 @@ const iconVariants = {
     opacity: 1,
     transition: {
       duration: 0.7,
-      delay: 4.2,
+      delay: 3.8,
     },
   },
 }
 
 const rectangleVariants = {
-  intiail: {
-    width: "0px",
+  initial: {
+    width: "0rem",
   },
   animate: {
-    width: "50px",
+    width: "4rem",
     transition: {
       duration: 0.7,
-      delay: 4.2,
+      delay: 3.8,
     },
   },
 }
@@ -83,6 +93,11 @@ const Icons = [
     name: "Linkedin",
     component: <Linkedin />,
     url: "https://linkedin.com",
+  },
+  {
+    name: "Email",
+    component: <Email />,
+    url: "https://gmail.com",
   },
 ]
 

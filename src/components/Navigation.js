@@ -25,7 +25,6 @@ const StyledNavbarLink = styled(Nav.Link)`
 `
 
 const StyledLogo = styled.svg`
-  height: 50px;
   & > circle {
     stroke: ${({ theme }) => theme.name};
   }
@@ -61,7 +60,7 @@ export default function Navigation() {
     const delay = ms => new Promise(res => setTimeout(res, ms))
     async function hideNav() {
       if (location.pathname === "/" || location.hash === "#home") {
-        await delay(4200)
+        await delay(4000)
         setActive(true)
       } else {
         setActive(true)
@@ -75,8 +74,8 @@ export default function Navigation() {
       <Container>
         <Navbar.Brand href="#home">
           <StyledLogo
-            width="274"
-            height="274"
+            width="50"
+            height="50"
             viewBox="0 0 274 274"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
