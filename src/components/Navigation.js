@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from "react"
+import ThemeSwitch from "./ThemeSwitch"
 import { Container, Image, Nav, Navbar } from "react-bootstrap"
 import { useLocation } from "@reach/router"
 import styled from "styled-components"
 
 const StyledNavbar = styled(Navbar)`
   opacity: ${({ show }) => (show ? 1 : 0)};
-  transition: opacity 0.3s linear;
   font-family: Source Sans Pro, sans-serif;
   background-color: ${({ theme }) => theme.background};
   z-index: 10000;
+  transition: all 0.4s linear;
 `
 
 const StyledNavbarLink = styled(Nav.Link)`
@@ -33,7 +34,7 @@ const StyledLogo = styled.svg`
   }
 `
 
-export default function Navigation() {
+export default function Navigation({ theme, themeToggler }) {
   const [scrollY, setScrollY] = useState(0)
   const [active, setActive] = useState(false)
   let location = useLocation()
@@ -106,6 +107,9 @@ export default function Navigation() {
             <StyledNavbarLink href="#contact">Contact</StyledNavbarLink>
             <StyledNavbarLink href="#resume">Resume</StyledNavbarLink>
           </Nav>
+          <Navbar.Brand>
+            <ThemeSwitch theme={theme} themeToggler={themeToggler} />
+          </Navbar.Brand>
         </Navbar.Collapse>
       </Container>
     </StyledNavbar>

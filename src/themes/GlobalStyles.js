@@ -5,7 +5,7 @@ export const GlobalStyles = createGlobalStyle`
         background: ${({ theme }) => theme.background};
         color: ${({ theme }) => theme.text};
         font-family: Source Sans Pro, sans-serif;
-        transition: all 0.50s linear; 
+        transition: all 0.4s linear; 
     }
     // ::selection {
     //     background-color: ${({ theme }) => theme.name};

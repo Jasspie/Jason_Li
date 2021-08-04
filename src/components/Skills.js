@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import { InView } from "react-intersection-observer"
 
 const SkillsTitle = styled.h4`
-  opacity: ${props => (props.active ? 1 : 0.3)};
+  opacity: ${props => (props.active ? 1 : 0.5)};
   color: ${({ theme }) => theme.name};
   cursor: pointer;
   font-weight: 700;
@@ -66,9 +66,9 @@ export default function Skills({ skills }) {
                     variants={titles}
                     initial="initial"
                     animate={inView ? "animate" : "initial"}
+                    key={index}
                   >
                     <SkillsTitle
-                      key={index}
                       className="my-5"
                       active={skills[id].title === skill.title ? 1 : 0}
                       onClick={() => setIndex(index)}
