@@ -81,7 +81,7 @@ export default function Skills({ skills }) {
             }}
           </InView>
         </Col>
-        <Col lg={9}>
+        <Col lg={9} style={{ minHeight: "65vh" }}>
           <Row>
             {skills[id].tech.map((skill, index) => {
               return (
