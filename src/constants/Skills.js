@@ -1,5 +1,3 @@
-import React from "react"
-
 function importAll(r) {
   let images = {}
   r.keys().forEach((item, index) => {
