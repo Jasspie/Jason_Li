@@ -1,7 +1,7 @@
 import React from "react"
 import { Row, Col } from "react-bootstrap"
-import Name from "../components/Name"
-import Profile from "../components/Profile"
+import Name from "../components/home/Name"
+import Profile from "../components/home/Profile"
 
 export default function Home() {
   return (

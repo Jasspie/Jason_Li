@@ -1,5 +1,5 @@
 import React from "react"
-import useRefScrollProgress from "../hooks/useRefScrollProgress"
+import useRefScrollProgress from "../../hooks/useRefScrollProgress"
 import { useTransform, useViewportScroll } from "framer-motion"
 
 export default function ImageOpacity(reference) {

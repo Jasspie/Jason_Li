@@ -5,10 +5,9 @@ import { useViewportScroll, useTransform, motion } from "framer-motion"
 import styled from "styled-components"
 
 import Heading from "../components/Heading"
-import Laptop from "../components/Laptop"
-import Project from "../components/Project"
+import Laptop from "../components/projects/Laptop"
 import { PROJECT_IMAGES } from "../constants/Projects"
-import ImageOpacity from "../components/ImageOpacity"
+import ImageOpacity from "../components/projects/ImageOpacity"
 
 const StyledLaptop = styled(Row)`
   height: 90vh;
@@ -25,7 +24,7 @@ export default function Projects() {
   const scale = useTransform(
     scrollYProgress,
     [initialStart, initialEnd],
-    [1, 0.7]
+    [1, 0.75]
   )
 
   const open = useRef()
@@ -79,14 +78,16 @@ export default function Projects() {
         </motion.div>
       </StyledLaptop>
       <Row style={{ height: "40vh", border: "5px solid green" }} ref={open} />
-      <Row style={{ height: "60vh", border: "5px solid grey" }} />
+      <Row style={{ height: "40vh", border: "5px solid orange" }} />
       {refs.map((ref, index) => {
         return (
-          <Row
-            ref={ref}
-            key={index}
-            style={{ height: "120vh", border: "5px solid grey" }}
-          />
+          <Fragment key={index}>
+            <Row
+              ref={ref}
+              style={{ height: "120vh", border: "5px solid grey" }}
+            />
+            <Row style={{ height: "20vh" }} />
+          </Fragment>
         )
       })}
     </>

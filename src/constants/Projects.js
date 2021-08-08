@@ -1,4 +1,4 @@
-import Project1 from "../assets/Project1.png"
+import Project1 from "../assets/projects/Project1.png"
 
 export const PROJECT_IMAGES = [Project1, Project1, Project1]
 

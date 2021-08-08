@@ -2,8 +2,8 @@ import React from "react"
 import { Row, Col } from "react-bootstrap"
 import { graphql, useStaticQuery } from "gatsby"
 import Heading from "../components/Heading"
-import AboutInfo from "../components/AboutInfo"
-import Skills from "../components/Skills"
+import AboutInfo from "../components/about/AboutInfo"
+import Skills from "../components/about/Skills"
 import { SKILLS } from "../constants/Skills"
 
 const query = graphql`
