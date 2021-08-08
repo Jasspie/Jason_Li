@@ -4,7 +4,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Heading from "../components/Heading"
 import AboutInfo from "../components/AboutInfo"
 import Skills from "../components/Skills"
-import { SKILLS } from "../constants/Constants"
+import { SKILLS } from "../constants/Skills"
 
 const query = graphql`
   {
@@ -21,8 +21,6 @@ export default function About() {
     allStrapiAbout: { nodes },
   } = useStaticQuery(query)
 
-  // console.log(nodes[0])
-
   return (
     <>
       <Row className="mb-4">
@@ -35,7 +33,7 @@ export default function About() {
           <AboutInfo about={nodes[0].about_info} />
         </Col>
       </Row>
-      <Row>
+      <Row className="mt-3">
         <Col lg={9} className="mx-auto">
           <Skills skills={SKILLS} />
         </Col>

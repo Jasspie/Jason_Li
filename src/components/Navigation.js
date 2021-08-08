@@ -21,7 +21,6 @@ const StyledNavbarLink = styled(Nav.Link)`
   transition: opacity 0.3s linear;
   &:hover {
     opacity: 1;
-    transition: opacity 0.3s linear;
   }
 `
 
