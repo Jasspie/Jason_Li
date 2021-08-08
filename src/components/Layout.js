@@ -1,9 +1,9 @@
-import React, { useState } from "react"
+import React from "react"
 import Navigation from "./Navigation"
 import { ThemeProvider } from "styled-components"
 import { GlobalStyles } from "../themes/GlobalStyles"
 import { lightTheme, darkTheme } from "../themes/Themes"
-import { useDarkMode } from "../themes/useDarkMode"
+import { useDarkMode } from "../hooks/useDarkMode"
 
 export default function Layout({ children }) {
   const [theme, themeToggler] = useDarkMode()
