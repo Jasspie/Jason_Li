@@ -24,8 +24,10 @@ export default function About() {
   return (
     <>
       <Row className="mb-4">
-        <Col lg={7} className="mx-auto">
-          <Heading>About Me</Heading>
+        <Col lg={12} className="mx-auto">
+          <Heading>
+            A b o u t<span style={{ marginLeft: "2.5rem" }} />M e
+          </Heading>
         </Col>
       </Row>
       <Row className="mb-3">

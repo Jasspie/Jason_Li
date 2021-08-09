@@ -5,6 +5,8 @@ import { motion } from "framer-motion"
 
 const Header = styled.span`
   font-size: calc(2rem + 1.5vw);
+  font-family: Poppins;
+  text-transform: uppercase;
   text-align: center;
   font-weight: 700;
   color: ${({ theme }) => theme.name};

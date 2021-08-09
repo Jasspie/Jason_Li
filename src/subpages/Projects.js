@@ -36,7 +36,10 @@ export default function Projects() {
     <>
       <Row>
         <Col lg={12} className="mx-auto">
-          <Heading>Featured Projects</Heading>
+          <Heading>
+            F e a t u r e d <span style={{ marginLeft: "2rem" }} />P r o j e c t
+            s
+          </Heading>
         </Col>
       </Row>
       <StyledLaptop ref={initial}>
