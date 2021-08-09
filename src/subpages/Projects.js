@@ -1,14 +1,15 @@
 import React, { useRef, Fragment } from "react"
-import { Row, Col, Image, Card } from "react-bootstrap"
+import { Row, Col, Image } from "react-bootstrap"
 import { motion } from "framer-motion"
 import styled from "styled-components"
 
 import Heading from "../components/Heading"
 import Laptop from "../components/projects/Laptop"
+import CardProject from "../components/projects/CardProject"
 import ImageTransform from "../components/projects/ImageTransform"
 import CardTransform from "../components/projects/CardTransform"
 import LaptopTransform from "../components/projects/LaptopTransform"
-import { PROJECT_IMAGES, PROJECT_DESCS } from "../constants/Projects"
+import { PROJECTS } from "../constants/Projects"
 
 const StyledLaptop = styled(Row)`
   height: 90vh;
@@ -48,7 +49,7 @@ export default function Projects() {
           className="mx-auto mb-3 pt-3"
         >
           <Laptop opacity={opacity} />
-          {PROJECT_IMAGES.map((image, index) => {
+          {PROJECTS.map((project, index) => {
             return (
               <motion.div
                 style={{
@@ -58,7 +59,7 @@ export default function Projects() {
                 }}
                 key={index}
               >
-                <Image src={image} fluid />
+                <Image src={project.image} fluid />
               </motion.div>
             )
           })}
@@ -66,7 +67,7 @@ export default function Projects() {
       </StyledLaptop>
       <Row style={{ height: "40vh" }} ref={open} />
       <Row style={{ height: "40vh" }} />
-      {PROJECT_DESCS.map((desc, index) => {
+      {PROJECTS.map((project, index) => {
         return (
           <Fragment key={index}>
             <Row ref={refs[index]} style={{ height: "120vh" }}>
@@ -77,17 +78,10 @@ export default function Projects() {
                     x: CardTransform(refs[index]),
                     opacity: ImageTransform(refs[index]),
                     marginRight: "4rem",
-                    borderRadius: "25px",
+                    borderRadius: "40px",
                   }}
                 >
-                  <Card
-                    style={{
-                      minHeight: "60vh",
-                      borderColor: "white",
-                      borderRadius: "25px",
-                      overflow: "hidden",
-                    }}
-                  />
+                  <CardProject project={project} />
                 </motion.div>
               </Col>
             </Row>
