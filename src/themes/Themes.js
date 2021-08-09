@@ -3,6 +3,8 @@ export const lightTheme = {
   name: "#AD94CD",
   rectangle: "#9A9A9A",
   background: "#FFFFFF",
+  bw: "#3d3d3d",
+  card: "#eadcfc",
 }
 
 export const darkTheme = {
@@ -10,4 +12,6 @@ export const darkTheme = {
   name: "#84B0E5",
   rectangle: "#9A9A9A",
   background: "#171619",
+  bw: "#FFFFFF",
+  card: "#03346e",
 }

@@ -1,33 +1,31 @@
 import Project1 from "../assets/projects/Project1.png"
 
-export const PROJECT_IMAGES = [Project1, Project1, Project1]
-
-export const PROJECT_DESCS = [
+export const PROJECTS = [
   {
-    id: 1,
-    image: Project1,
-    title: "Hi There",
-    description: "This is my project.",
+    title: "P R O J E C T",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas diam ut tortor finibus porta. Etiam vulputate orci vitae scelerisque cursus. Aenean semper vehicula bibendum. Vestibulum tempus libero eu nunc elementum, a mattis ipsum convallis. ",
     stack: ["JavaScript", "React", "Python"],
     repo: "https://google.com",
     link: "https://google.com",
+    image: Project1,
   },
   {
-    id: 1,
-    image: Project1,
-    title: "Hi There",
-    description: "This is my project.",
+    title: "P R O J E C T",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas diam ut tortor finibus porta. Etiam vulputate orci vitae scelerisque cursus. Aenean semper vehicula bibendum. Vestibulum tempus libero eu nunc elementum, a mattis ipsum convallis. ",
     stack: ["JavaScript", "React", "Python"],
     repo: "https://google.com",
     link: "https://google.com",
+    image: Project1,
   },
   {
-    id: 1,
-    image: Project1,
-    title: "Hi There",
-    description: "This is my project.",
+    title: "P R O J E C T",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas diam ut tortor finibus porta. Etiam vulputate orci vitae scelerisque cursus. Aenean semper vehicula bibendum. Vestibulum tempus libero eu nunc elementum, a mattis ipsum convallis. ",
     stack: ["JavaScript", "React", "Python"],
     repo: "https://google.com",
     link: "https://google.com",
+    image: Project1,
   },
 ]

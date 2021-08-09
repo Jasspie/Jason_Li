@@ -56,7 +56,7 @@ export default function Skills({ skills }) {
   return (
     <>
       <Row>
-        <Col lg={3}>
+        <Col lg={{ span: 3, order: "first" }} xs={{ span: 12, order: "last" }}>
           <InView triggerOnce>
             {({ inView, ref, entry }) => {
               return skills.map((skill, index) => {
@@ -69,7 +69,7 @@ export default function Skills({ skills }) {
                     key={index}
                   >
                     <SkillsTitle
-                      className="my-5"
+                      className="mb-5 my-3"
                       active={skills[id].title === skill.title ? 1 : 0}
                       onClick={() => setIndex(index)}
                     >
@@ -82,7 +82,7 @@ export default function Skills({ skills }) {
           </InView>
         </Col>
         <Col lg={9} style={{ minHeight: "65vh" }}>
-          <Row>
+          <Row className="mb-3">
             {skills[id].tech.map((skill, index) => {
               return (
                 <Col lg={3} xs={3} className="p-3" key={skill.name}>

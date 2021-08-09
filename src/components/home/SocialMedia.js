@@ -10,7 +10,7 @@ const Rectangle = styled(motion.div)`
   display: inline-block;
   margin-right: 1rem;
 `
-const Instagram = styled(motion(FaInstagram))`
+const Instagram = styled(FaInstagram)`
   transition: 0.3s ease-out;
   &:hover {
     fill: #dc2a7c;
@@ -18,15 +18,15 @@ const Instagram = styled(motion(FaInstagram))`
     cursor: pointer;
   }
 `
-const Github = styled(motion(FaGithub))`
+const Github = styled(FaGithub)`
   transition: 0.3s ease-out;
   &:hover {
-    fill: ${({ theme }) => theme.text};
+    fill: ${({ theme }) => theme.bw};
     transition: 0.3s ease-out;
     cursor: pointer;
   }
 `
-const Linkedin = styled(motion(FaLinkedin))`
+const Linkedin = styled(FaLinkedin)`
   transition: 0.3s ease-out;
   &:hover {
     fill: #0a66c2;
@@ -35,7 +35,7 @@ const Linkedin = styled(motion(FaLinkedin))`
   }
 `
 
-const Email = styled(motion(FaEnvelope))`
+const Email = styled(FaEnvelope)`
   transition: 0.3s ease-out;
   &:hover {
     fill: #d93025;
@@ -74,7 +74,7 @@ const value = {
   color: "#9A9A9A",
   style: {
     marginLeft: "1rem",
-    maxHeight: "60px",
+    maxHeight: "50px",
   },
 }
 
