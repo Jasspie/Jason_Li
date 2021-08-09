@@ -2,7 +2,7 @@ import Project1 from "../assets/projects/Project1.png"
 
 export const PROJECT_IMAGES = [Project1, Project1, Project1]
 
-export const PROJECTS = [
+export const PROJECT_DESCS = [
   {
     id: 1,
     image: Project1,
@@ -11,9 +11,6 @@ export const PROJECTS = [
     stack: ["JavaScript", "React", "Python"],
     repo: "https://google.com",
     link: "https://google.com",
-    opacity: 0,
-    x: "-5rem",
-    ref: null,
   },
   {
     id: 1,
@@ -23,9 +20,6 @@ export const PROJECTS = [
     stack: ["JavaScript", "React", "Python"],
     repo: "https://google.com",
     link: "https://google.com",
-    opacity: 0,
-    x: "-5rem",
-    ref: null,
   },
   {
     id: 1,
@@ -35,8 +29,5 @@ export const PROJECTS = [
     stack: ["JavaScript", "React", "Python"],
     repo: "https://google.com",
     link: "https://google.com",
-    opacity: 0,
-    x: "-5rem",
-    ref: null,
   },
 ]
