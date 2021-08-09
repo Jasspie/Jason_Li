@@ -23,14 +23,14 @@ const SkillsName = styled.h6`
 const icons = {
   initial: {
     opacity: 0,
-    y: -15,
+    y: -40,
   },
   animate: custom => ({
     opacity: 1,
     y: 0,
     transition: {
-      delay: 0.3 + 0.1 * custom,
-      duration: 0.3,
+      delay: 0.3 + 0.05 * custom,
+      duration: 0.5,
       ease: "easeInOut",
     },
   }),
@@ -45,7 +45,7 @@ const titles = {
     x: 0,
     opacity: 1,
     transition: {
-      duration: 0.8,
+      duration: 0.3,
       ease: "easeInOut",
     },
   },

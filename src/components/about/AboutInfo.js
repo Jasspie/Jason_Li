@@ -31,7 +31,7 @@ function AnimatedText({ children, other }) {
   }
 
   return (
-    <InView threshold={0.5} triggerOnce>
+    <InView threshold={0.3} triggerOnce>
       {({ inView, ref, entry }) => {
         return (
           <motion.h5

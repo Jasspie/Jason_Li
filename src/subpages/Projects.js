@@ -1,6 +1,6 @@
 import React, { useRef, Fragment } from "react"
 import { Row, Col, Image, Card } from "react-bootstrap"
-import { useViewportScroll, motion } from "framer-motion"
+import { motion } from "framer-motion"
 import styled from "styled-components"
 
 import Heading from "../components/Heading"
@@ -19,7 +19,6 @@ const StyledLaptop = styled(Row)`
 
 export default function Projects() {
   const initial = useRef()
-  const final = useRef()
   const open = useRef()
   const exit = useRef()
 
@@ -57,6 +56,7 @@ export default function Projects() {
                   position: "absolute",
                   zIndex: 1000,
                 }}
+                key={index}
               >
                 <Image src={image} fluid />
               </motion.div>

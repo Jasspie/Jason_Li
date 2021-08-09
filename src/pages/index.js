@@ -16,7 +16,7 @@ export default function Index() {
         <Row>
           <About />
         </Row>
-        <Row style={{ height: "10vh" }} />
+        <Row style={{ height: "15vh" }} />
         <Row>
           <Projects />
         </Row>

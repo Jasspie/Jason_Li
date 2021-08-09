@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import ThemeSwitch from "./ThemeSwitch"
-import { Container, Image, Nav, Navbar } from "react-bootstrap"
+import { Container, Nav, Navbar } from "react-bootstrap"
 import { useLocation } from "@reach/router"
 import styled from "styled-components"
 
@@ -67,7 +67,7 @@ export default function Navigation({ theme, themeToggler }) {
       }
     }
     hideNav()
-  }, [])
+  }, [location])
 
   return (
     <StyledNavbar expand="lg" fixed="top" show={active ? 1 : 0}>
