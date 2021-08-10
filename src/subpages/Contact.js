@@ -5,6 +5,7 @@ import styled from "styled-components"
 import { InView } from "react-intersection-observer"
 import { motion } from "framer-motion"
 import Heading from "../components/Heading"
+import Footer from "../components/Footer"
 import SocialMedia from "../components/contact/SocialMedia"
 
 const query = graphql`
@@ -73,6 +74,11 @@ export default function Contact() {
         <Row className="mt-3">
           <SocialMedia />
         </Row>
+        <Row style={{ height: "25vh" }} />
+        <Row>
+          <Footer />
+        </Row>
+        <Row style={{ height: "5vh" }} />
       </Row>
     </>
   )

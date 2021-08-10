@@ -23,7 +23,6 @@ export default function Index() {
         <Row>
           <Contact />
         </Row>
-        <Row style={{ height: "40vh" }} />
       </Container>
     </Layout>
   )
