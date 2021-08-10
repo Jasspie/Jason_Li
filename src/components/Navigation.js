@@ -101,10 +101,10 @@ export default function Navigation({ theme, themeToggler }) {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <StyledNavbarLink href="#about">About</StyledNavbarLink>
-            <StyledNavbarLink href="#projects">Projects</StyledNavbarLink>
-            <StyledNavbarLink href="#contact">Contact</StyledNavbarLink>
-            <StyledNavbarLink href="#resume">Resume</StyledNavbarLink>
+            <StyledNavbarLink href="/#about">About</StyledNavbarLink>
+            <StyledNavbarLink href="/#projects">Projects</StyledNavbarLink>
+            <StyledNavbarLink href="/#contact">Contact</StyledNavbarLink>
+            <StyledNavbarLink>Resume</StyledNavbarLink>
           </Nav>
           <Navbar.Brand>
             <ThemeSwitch theme={theme} themeToggler={themeToggler} />

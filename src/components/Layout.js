@@ -1,11 +1,21 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Navigation from "./Navigation"
 import { ThemeProvider } from "styled-components"
 import { GlobalStyles } from "../themes/GlobalStyles"
 import { lightTheme, darkTheme } from "../themes/Themes"
 import { useDarkMode } from "../hooks/useDarkMode"
+import { useLocation } from "@reach/router"
 
 export default function Layout({ children }) {
+  let location = useLocation()
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1))
+      element.scrollIntoView()
+      element.focus()
+    }
+  }, [])
+
   const [theme, themeToggler] = useDarkMode()
 
   if (typeof window != "undefined") {
