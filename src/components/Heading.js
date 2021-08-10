@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { InView } from "react-intersection-observer"
 import { motion } from "framer-motion"
+import { media } from "../themes/Media"
 
 const Header = styled.span`
   font-size: calc(2rem + 1.5vw);
@@ -12,11 +13,14 @@ const Header = styled.span`
   color: ${({ theme }) => theme.name};
 `
 const Rectangle = styled(motion.div)`
-  background-color: ${({ theme }) => theme.rectangle};
-  height: 3px;
-  display: inline-block;
-  margin-left: 2rem;
-  margin-bottom: 1rem;
+  display: none;
+  @media ${media.lg} {
+    background-color: ${({ theme }) => theme.rectangle};
+    height: 3px;
+    display: inline-block;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
 `
 
 const header = {

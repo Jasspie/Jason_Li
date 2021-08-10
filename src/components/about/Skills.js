@@ -11,6 +11,7 @@ const SkillsTitle = styled.h4`
   font-weight: 700;
   text-align: center;
   transition: opacity 0.3s linear;
+  margin-bottom: calc(1rem + 2vw);
 `
 
 const SkillsName = styled.h6`
@@ -69,7 +70,7 @@ export default function Skills({ skills }) {
                     key={index}
                   >
                     <SkillsTitle
-                      className="mb-5 my-3"
+                      className="mt-3"
                       active={skills[id].title === skill.title ? 1 : 0}
                       onClick={() => setIndex(index)}
                     >
@@ -81,7 +82,7 @@ export default function Skills({ skills }) {
             }}
           </InView>
         </Col>
-        <Col lg={9}>
+        <Col lg={9} style={{ height: "60vh" }}>
           <Row className="mb-3">
             {skills[id].tech.map((skill, index) => {
               return (

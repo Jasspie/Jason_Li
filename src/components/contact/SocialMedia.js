@@ -57,13 +57,10 @@ const iconVariants = {
 }
 
 const value = {
-  size: "calc(3rem + 1.5vw)",
+  size: "calc(2rem + 1.5vw)",
   color: "#9A9A9A",
   style: {
     maxHeight: "75px",
-    marginRight: "auto",
-    marginLeft: "auto",
-    display: "block",
   },
 }
 

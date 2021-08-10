@@ -3,8 +3,10 @@ import { Card } from "react-bootstrap"
 import styled from "styled-components"
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa"
 import { IconContext } from "react-icons"
+import { media } from "../../themes/Media"
 
 const StyledCard = styled(Card)`
+  padding: 3.5rem 2rem 3.5rem 2rem;
   min-height: 20vh;
   border-color: ${({ theme }) => theme.card};
   background-color: ${({ theme }) => theme.card};
@@ -12,6 +14,9 @@ const StyledCard = styled(Card)`
   overflow: hidden;
   transition: all 0.4s linear;
   margin-top: 10vh;
+  @media ${media.md} {
+    padding: 4rem 2.5rem 4rem 2.5rem;
+  }
 `
 
 const StyledTitle = styled.h2`
@@ -88,7 +93,7 @@ const value = {
 
 export default function CardProject({ project }) {
   return (
-    <StyledCard className="p-5">
+    <StyledCard>
       <StyledTitle className="mb-4">{project.title}</StyledTitle>
       <div className="mb-4">
         <IconContext.Provider value={value}>

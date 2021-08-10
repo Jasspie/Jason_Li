@@ -3,13 +3,16 @@ import styled from "styled-components"
 import { Container, Row, Col } from "react-bootstrap"
 import { InView } from "react-intersection-observer"
 import { motion } from "framer-motion"
+import { media } from "../themes/Media"
 
 const StyledFooter = styled.h5`
   color: ${({ theme }) => theme.text};
   font-weight: 700;
   font-family: Source Sans Pro, sans-serif;
-  text-align: center;
-  //   margin-right: 2.5rem;
+  @media ${media.md} {
+    text-align: center;
+    margin-right: 1rem;
+  }
 `
 const text = {
   initial: {
