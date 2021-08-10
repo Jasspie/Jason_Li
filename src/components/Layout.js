@@ -9,12 +9,16 @@ import { useLocation } from "@reach/router"
 export default function Layout({ children }) {
   let location = useLocation()
   useEffect(() => {
-    if (location.hash) {
+    const hashes = ["home", "about", "projects", "contact"]
+    if (
+      hashes.includes(location.hash.substring(1)) &&
+      location.pathname === "/"
+    ) {
       const element = document.getElementById(location.hash.substring(1))
       element.scrollIntoView()
       element.focus()
     }
-  }, [])
+  }, [location.hash])
 
   const [theme, themeToggler] = useDarkMode()
 

@@ -57,9 +57,13 @@ export default function Navigation({ theme, themeToggler }) {
   })
 
   useEffect(() => {
+    // console.log(location)
     const delay = ms => new Promise(res => setTimeout(res, ms))
     async function hideNav() {
-      if (location.pathname === "/" || location.hash === "#home") {
+      if (
+        location.pathname === "/" ||
+        (location.hash === "#home" && location.pathname === "/")
+      ) {
         await delay(4000)
         setActive(true)
       } else {
@@ -72,7 +76,7 @@ export default function Navigation({ theme, themeToggler }) {
   return (
     <StyledNavbar expand="lg" fixed="top" show={active ? 1 : 0}>
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/#home">
           <StyledLogo
             width="50"
             height="50"
