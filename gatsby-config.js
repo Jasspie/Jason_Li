@@ -6,6 +6,13 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: "Jason Li",
+    description: "Personal Portfolio Website by Jason Li",
+    author: "@JasonLi",
+    image: "/jason-li.png",
+    siteUrl: "http://localhost:8000",
+  },
   plugins: [
     {
       resolve: `gatsby-source-strapi`,
@@ -31,6 +38,15 @@ module.exports = {
       options: {
         name: `assets`,
         path: `${__dirname}/src/assets/`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
+        start_url: `/`,
+        icon: `src/assets/Logo.svg`, // This path is relative to the root of the site.
       },
     },
   ],

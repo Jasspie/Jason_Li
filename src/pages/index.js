@@ -5,10 +5,12 @@ import Home from "../subpages/Home"
 import About from "../subpages/About"
 import Projects from "../subpages/Projects"
 import Contact from "../subpages/Contact"
+import Seo from "../components/Seo"
 
 export default function Index() {
   return (
     <Layout>
+      <Seo />
       <Container>
         <Row className="mb-5" style={{ minHeight: "100vh" }}>
           <Home />
