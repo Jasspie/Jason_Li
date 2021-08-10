@@ -2,6 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
+// add siteUrl
 const query = graphql`
   {
     site {
@@ -18,7 +19,7 @@ const query = graphql`
 
 export default function Seo() {
   const { site } = useStaticQuery(query)
-  const { siteDesc, siteTitle, siteUrl, image, author } = site.siteMetadata
+  const { siteDesc, siteTitle, image, author } = site.siteMetadata
 
   return (
     <Helmet htmlAttributes={{ lang: "en" }} title={siteTitle || "Jason Li"}>
