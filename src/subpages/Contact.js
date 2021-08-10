@@ -22,8 +22,14 @@ const StyledContact = styled(motion.h4)`
   font-weight: 400;
   font-family: Source Sans Pro, sans-serif;
   margin-bottom: 2rem;
-  text-align: center;
+  // text-align: center;
 `
+
+const StyledDiv = styled.div`
+  display: inline-block;
+  margin-left: 2rem;
+`
+
 const text = {
   initial: {
     opacity: 0,
@@ -48,37 +54,39 @@ export default function Contact() {
 
   return (
     <>
-      <Row>
-        <Col lg={12} className="mx-auto">
-          <Heading>
-            G E T<span style={{ marginLeft: "2.5rem" }} />I N
-            <span style={{ marginLeft: "2.5rem" }} /> C O N T A C T
-          </Heading>
-        </Col>
-        <Col lg={8} className="mt-3 mx-auto">
-          <InView threshold={0.5} triggerOnce>
-            {({ inView, ref, entry }) => {
-              return (
-                <StyledContact
-                  ref={ref}
-                  variants={text}
-                  initial="initial"
-                  animate={inView ? "animate" : "initial"}
-                >
-                  {data}
-                </StyledContact>
-              )
-            }}
-          </InView>
-        </Col>
+      <Row style={{ height: "90vh" }} id="contact">
+        <Row>
+          <Col lg={12} className="mx-auto">
+            <Heading>
+              <StyledDiv>G E T</StyledDiv>
+              <StyledDiv>I N</StyledDiv>
+              <StyledDiv>C O N T A C T</StyledDiv>
+            </Heading>
+          </Col>
+          <Col lg={8} className="mx-auto">
+            <InView threshold={0.5} triggerOnce>
+              {({ inView, ref, entry }) => {
+                return (
+                  <StyledContact
+                    ref={ref}
+                    variants={text}
+                    initial="initial"
+                    animate={inView ? "animate" : "initial"}
+                  >
+                    {data}
+                  </StyledContact>
+                )
+              }}
+            </InView>
+          </Col>
+        </Row>
         <Row className="mt-3">
           <SocialMedia />
         </Row>
-        <Row style={{ height: "25vh" }} />
         <Row>
+          <Row style={{ height: "10vh" }} />
           <Footer />
         </Row>
-        <Row style={{ height: "5vh" }} />
       </Row>
     </>
   )

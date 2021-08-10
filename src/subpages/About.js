@@ -1,6 +1,7 @@
 import React from "react"
 import { Row, Col } from "react-bootstrap"
 import { graphql, useStaticQuery } from "gatsby"
+import styled from "styled-components"
 import Heading from "../components/Heading"
 import AboutInfo from "../components/about/AboutInfo"
 import Skills from "../components/about/Skills"
@@ -15,6 +16,10 @@ const query = graphql`
     }
   }
 `
+const StyledDiv = styled.div`
+  display: inline-block;
+  margin-left: 2.5rem;
+`
 
 export default function About() {
   const {
@@ -23,10 +28,12 @@ export default function About() {
 
   return (
     <>
-      <Row className="mb-4">
+      <Row className="mb-4" id="about">
+        <Row style={{ height: "10vh" }} />
         <Col lg={12} className="mx-auto">
           <Heading>
-            A b o u t<span style={{ marginLeft: "2.5rem" }} />M e
+            <StyledDiv>A b o u t </StyledDiv>
+            <StyledDiv> M e</StyledDiv>
           </Heading>
         </Col>
       </Row>

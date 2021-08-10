@@ -2,7 +2,7 @@ import React, { useRef, Fragment } from "react"
 import { Row, Col, Image } from "react-bootstrap"
 import { motion } from "framer-motion"
 import styled from "styled-components"
-
+import { media } from "../themes/Media"
 import Heading from "../components/Heading"
 import Laptop from "../components/projects/Laptop"
 import CardProject from "../components/projects/CardProject"
@@ -12,10 +12,34 @@ import LaptopTransform from "../components/projects/LaptopTransform"
 import { PROJECTS } from "../constants/Projects"
 
 const StyledLaptop = styled(Row)`
-  height: 90vh;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0rem;
+  display: none;
+  @media ${media.md} {
+    display: flex;
+    height: 90vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0rem;
+  }
+`
+
+const StyledRow = styled(Row)`
+  height: 0vh;
+  @media ${media.md} {
+    height: 40vh;
+  }
+`
+
+const StyledCard = styled(motion.div)`
+  margin-right: 0rem;
+  border-radius: 40px;
+  @media ${media.md} {
+    margin-right: 4rem;
+  }
+`
+
+const StyledDiv = styled.div`
+  display: inline-block;
+  margin-left: 2rem;
 `
 
 export default function Projects() {
@@ -34,11 +58,12 @@ export default function Projects() {
 
   return (
     <>
-      <Row>
+      <Row id="projects">
+        <Row style={{ height: "10vh" }} />
         <Col lg={12} className="mx-auto">
           <Heading>
-            F e a t u r e d <span style={{ marginLeft: "2rem" }} />P r o j e c t
-            s
+            <StyledDiv>F e a t u r e d</StyledDiv>
+            <StyledDiv>P r o j e c t s</StyledDiv>
           </Heading>
         </Col>
       </Row>
@@ -68,31 +93,29 @@ export default function Projects() {
           })}
         </motion.div>
       </StyledLaptop>
-      <Row style={{ height: "40vh" }} ref={open} />
+      <StyledRow ref={open} />
       <Row style={{ height: "40vh" }} />
       {PROJECTS.map((project, index) => {
         return (
           <Fragment key={index}>
             <Row ref={refs[index]} style={{ height: "120vh" }}>
-              <Col lg={4} style={{ marginTop: "15vh" }}>
-                <motion.div
+              <Col lg={4} xs={12} style={{ marginTop: "10vh" }}>
+                <StyledCard
                   className="shadow"
                   style={{
                     x: CardTransform(refs[index]),
                     opacity: ImageTransform(refs[index]),
-                    marginRight: "4rem",
-                    borderRadius: "40px",
                   }}
                 >
                   <CardProject project={project} />
-                </motion.div>
+                </StyledCard>
               </Col>
             </Row>
             <Row style={{ height: "20vh" }} />
           </Fragment>
         )
       })}
-      <Row style={{ height: "40vh" }} ref={exit} />
+      <StyledRow ref={exit} />
       <Row className="USE IN VIEW" style={{ height: "30vh" }} />
     </>
   )
