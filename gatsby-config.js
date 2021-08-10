@@ -13,7 +13,7 @@ module.exports = {
         apiURL: `http://localhost:1337`,
         queryLimit: 1000,
         collectionTypes: [],
-        singleTypes: [`Home`, `About`],
+        singleTypes: [`Home`, `About`, `Contact`],
       },
     },
     `gatsby-plugin-image`,

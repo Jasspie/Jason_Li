@@ -4,6 +4,7 @@ import Layout from "../components/Layout"
 import Home from "../subpages/Home"
 import About from "../subpages/About"
 import Projects from "../subpages/Projects"
+import Contact from "../subpages/Contact"
 
 export default function Index() {
   return (
@@ -19,6 +20,10 @@ export default function Index() {
         <Row>
           <Projects />
         </Row>
+        <Row>
+          <Contact />
+        </Row>
+        <Row style={{ height: "40vh" }} />
       </Container>
     </Layout>
   )
