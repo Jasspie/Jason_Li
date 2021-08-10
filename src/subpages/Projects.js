@@ -94,7 +94,6 @@ export default function Projects() {
       })}
       <Row style={{ height: "40vh" }} ref={exit} />
       <Row className="USE IN VIEW" style={{ height: "30vh" }} />
-      <Row style={{ height: "300vh" }} />
     </>
   )
 }
