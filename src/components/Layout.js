@@ -18,7 +18,7 @@ export default function Layout({ children }) {
       element.scrollIntoView()
       element.focus()
     }
-  }, [location.hash])
+  }, [location.hash, location.pathname])
 
   const [theme, themeToggler] = useDarkMode()
 
