@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 
 // credits to https://www.smashingmagazine.com/2020/04/dark-mode-react-apps-styled-components/
 export const useDarkMode = () => {
-  const [theme, setTheme] = useState("dark")
+  const [theme, setTheme] = useState("light")
 
   const setMode = mode => {
     window.localStorage.setItem("theme", mode)

@@ -39,7 +39,8 @@ const StyledCard = styled(motion.div)`
 
 const StyledDiv = styled.div`
   display: inline-block;
-  margin-left: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 `
 
 export default function Projects() {

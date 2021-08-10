@@ -18,7 +18,8 @@ const query = graphql`
 `
 const StyledDiv = styled.div`
   display: inline-block;
-  margin-left: 2.5rem;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 `
 
 export default function About() {
