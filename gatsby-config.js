@@ -46,7 +46,7 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        icon: `src/assets/Logo.svg`, // This path is relative to the root of the site.
+        icon: `static/jason-li-logo.png`, // This path is relative to the root of the site.
       },
     },
   ],
