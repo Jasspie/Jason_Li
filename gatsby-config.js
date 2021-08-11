@@ -11,7 +11,7 @@ module.exports = {
     description: "Personal Portfolio Website by Jason Li",
     author: "@JasonLi",
     image: "/jason-li.png",
-    siteUrl: "http://localhost:8000",
+    siteUrl: "https://jason-li.netlify.app",
   },
   plugins: [
     {
@@ -25,6 +25,7 @@ module.exports = {
     },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`, // Needed for dynamic images
     {
       resolve: `gatsby-plugin-google-fonts`,
