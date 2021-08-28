@@ -14,8 +14,10 @@ const StyledCard = styled(Card)`
   overflow: hidden;
   transition: all 0.4s linear;
   margin-top: 10vh;
+  margin-left: 0.75rem;
   @media ${media.md} {
     padding: 4rem 2.5rem 4rem 2.5rem;
+    margin-left: 0rem;
   }
 `
 
