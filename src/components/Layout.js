@@ -22,9 +22,9 @@ export default function Layout({ children }) {
 
   const [theme, themeToggler] = useDarkMode()
 
-  if (typeof window != "undefined") {
-    require("smooth-scroll")('a[href*="#"]')
-  }
+  // if (typeof window != "undefined") {
+  //   require("smooth-scroll")('a[href*="#"]')
+  // }
 
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>

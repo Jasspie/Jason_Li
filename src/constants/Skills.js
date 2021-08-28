@@ -41,7 +41,7 @@ export const SKILLS = [
         logo: images["java.png"].default,
       },
     ],
-    title: "Programming Languages",
+    title: "Languages",
   },
   {
     tech: [
