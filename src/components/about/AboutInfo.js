@@ -13,6 +13,7 @@ const About = styled.div`
     & > a {
       color: ${({ theme }) => theme.name};
       transition: 0.4s all ease;
+      position: relative;
       text-decoration: none;
       &::after {
         content: "";
@@ -34,7 +35,7 @@ const About = styled.div`
     }
   }
 `
-// <a href="https://www.uwo.ca/" target="_blank" rel="noopener noreferrer">Western University</a>
+// <a href="https://www.uwo.ca/" D>Western University</a>
 // <a href="./resume.pdf" target="_blank" rel="noopener noreferrer">resume</a>
 
 function AnimatedText({ children, other }) {
@@ -78,7 +79,14 @@ export default function AboutInfo({ about }) {
     <About>
       <Markdown
         children={about}
-        components={{ h5: ({ node, ...props }) => <AnimatedText {...props} /> }}
+        components={{
+          h5: ({ node, ...props }) => <AnimatedText {...props} />,
+          a: ({ node, children, ...props }) => (
+            <a {...props} target="_blank" rel="noopener noreferrer">
+              {children}
+            </a>
+          ),
+        }}
       />
     </About>
   )
