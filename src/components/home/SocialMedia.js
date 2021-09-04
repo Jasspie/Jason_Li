@@ -80,24 +80,24 @@ const value = {
 
 const Icons = [
   {
-    name: "Instagram",
-    component: <Instagram />,
-    url: "https://instagram.com",
-  },
-  {
-    name: "Github",
-    component: <Github />,
-    url: "https://github.com",
+    name: "Email",
+    component: <Email />,
+    url: "mailto:lijason02@hotmail.com",
   },
   {
     name: "Linkedin",
     component: <Linkedin />,
-    url: "https://linkedin.com",
+    url: "https://www.linkedin.com/in/lijason02/",
   },
   {
-    name: "Email",
-    component: <Email />,
-    url: "https://gmail.com",
+    name: "Github",
+    component: <Github />,
+    url: "https://github.com/Jasspie",
+  },
+  {
+    name: "Instagram",
+    component: <Instagram />,
+    url: "https://www.instagram.com/jass.li/",
   },
 ]
 
