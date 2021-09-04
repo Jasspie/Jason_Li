@@ -8,8 +8,8 @@ export const GlobalStyles = createGlobalStyle`
         transition: all 0.4s linear; 
         scroll-behavior: smooth;
     }
-    // ::selection {
-    //     background-color: ${({ theme }) => theme.name};
-    //     color: ${({ theme }) => theme.background};
-    // }
+    ::selection {
+        background-color: ${({ theme }) => theme.highlight};
+        color: ${({ theme }) => theme.bw};
+    }
 `

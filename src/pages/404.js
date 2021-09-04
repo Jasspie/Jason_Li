@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 import styled from "styled-components"
+import { Link } from "gatsby"
 
 const StyledMessage = styled.h1`
   color: ${({ theme }) => theme.text} !important;
@@ -21,7 +22,7 @@ const StyledButton = styled.div`
   padding: 1rem 2rem 1rem 2rem;
   font-family: Source Sans Pro, sans-serif;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2rem;
   cursor: pointer;
   display: inline-block;
   margin: 2rem auto;
@@ -33,11 +34,10 @@ export default function Error() {
     <Layout>
       <StyledNumber>404</StyledNumber>
       <StyledMessage>Page Not Found</StyledMessage>
-      <StyledButton
-        onClick={() => window.open("/")}
-        className="d-flex justify-content-center"
-      >
-        Go Home
+      <StyledButton className="d-flex justify-content-center">
+        <Link href="/" style={{ textDecoration: "none" }}>
+          Go Home
+        </Link>
       </StyledButton>
     </Layout>
   )

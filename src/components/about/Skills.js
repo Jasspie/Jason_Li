@@ -37,9 +37,10 @@ const StyledButton = styled(motion.div)`
   // border: 2px solid ${({ theme }) => theme.name};
 `
 const StyledCol = styled(Col)`
-  min-height: 35vh;
+  height: 42vh;
   @media ${media.md} {
-    min-height: 70vh;
+    height: 70vh;
+    max-height: 500px;
   }
 `
 
@@ -114,7 +115,7 @@ export default function Skills({ skills }) {
                       </SkillsTitle>
                     </StyledButton>
                   )
-                }
+                } else return null
               })
             }}
           </InView>
@@ -127,6 +128,7 @@ export default function Skills({ skills }) {
           >
             {id > 0 && (
               <FaArrowLeft
+                className="mb-5"
                 style={{ float: "left" }}
                 onClick={() => setIndex(id - 1)}
               />
@@ -171,6 +173,7 @@ export default function Skills({ skills }) {
           >
             {id < skills.length - 1 && (
               <FaArrowRight
+                className="mb-5"
                 style={{ float: "right", cursor: "pointer" }}
                 onClick={() => setIndex(id + 1)}
               />

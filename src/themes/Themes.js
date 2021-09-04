@@ -4,6 +4,7 @@ export const lightTheme = {
   rectangle: "#9A9A9A",
   background: "#FFFFFF",
   bw: "#3d3d3d",
+  highlight: "#c4c4c4",
   card: "#eadcfc",
 }
 
@@ -13,5 +14,6 @@ export const darkTheme = {
   rectangle: "#9A9A9A",
   background: "#171619",
   bw: "#FFFFFF",
+  highlight: "#2b2b2b",
   card: "#03346e",
 }
