@@ -108,7 +108,13 @@ export default function Navigation({ theme, themeToggler }) {
             <StyledNavbarLink href="/#about">About</StyledNavbarLink>
             <StyledNavbarLink href="/#projects">Projects</StyledNavbarLink>
             <StyledNavbarLink href="/#contact">Contact</StyledNavbarLink>
-            <StyledNavbarLink>Resume</StyledNavbarLink>
+            <StyledNavbarLink
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume
+            </StyledNavbarLink>
           </Nav>
           <Navbar.Brand>
             <ThemeSwitch theme={theme} themeToggler={themeToggler} />

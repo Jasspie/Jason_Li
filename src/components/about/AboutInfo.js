@@ -10,8 +10,32 @@ const About = styled.div`
     font-weight: 400;
     font-family: Source Sans Pro, sans-serif;
     margin-bottom: 2rem;
+    & > a {
+      color: ${({ theme }) => theme.name};
+      transition: 0.4s all ease;
+      text-decoration: none;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 0.12rem;
+        bottom: -0.08rem;
+        left: 0;
+        background-color: ${({ theme }) => theme.name};
+        transform-origin: bottom left;
+        transition: transform 0.15s ease-out;
+      }
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+        }
+      }
+    }
   }
 `
+// <a href="https://www.uwo.ca/" target="_blank" rel="noopener noreferrer">Western University</a>
+// <a href="./resume.pdf" target="_blank" rel="noopener noreferrer">resume</a>
 
 function AnimatedText({ children, other }) {
   const text = {
