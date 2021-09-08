@@ -21,7 +21,7 @@ const StyledCard = styled(Card)`
   }
 `
 
-const StyledTitle = styled.h2`
+const StyledTitle = styled.h3`
   color: ${({ theme }) => theme.bw};
   font-weight: 700;
   font-family: Poppins;
@@ -78,7 +78,7 @@ const StyledButton = styled.div`
   margin-top: 0.5rem;
   font-family: Source Sans Pro, sans-serif;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.6rem;
   opacity: 0.8;
   display: inline-block;
   transition: all 0.4s linear;
