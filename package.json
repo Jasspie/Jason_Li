@@ -8,7 +8,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
+    "start": "concurrently \"npm run develop --prefix strapi\" \"npm run develop\"",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
@@ -16,6 +16,7 @@
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
     "bootstrap": "^5.0.2",
+    "concurrently": "^6.2.1",
     "framer-motion": "^4.1.17",
     "gatsby": "^3.10.1",
     "gatsby-plugin-google-fonts": "^1.0.1",
