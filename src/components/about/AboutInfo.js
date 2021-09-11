@@ -8,7 +8,7 @@ const About = styled.div`
   & > h5 {
     color: ${({ theme }) => theme.text};
     font-weight: 400;
-    font-family: Source Sans Pro, sans-serif;
+    font-family: Inter, sans-serif;
     margin-bottom: 2rem;
     & > a {
       color: ${({ theme }) => theme.name};

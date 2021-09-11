@@ -20,7 +20,7 @@ const query = graphql`
 const StyledContact = styled(motion.h4)`
   color: ${({ theme }) => theme.text};
   font-weight: 400;
-  font-family: Source Sans Pro, sans-serif;
+  font-family: Inter, sans-serif;
   margin-bottom: 2rem;
   // text-align: center;
 `

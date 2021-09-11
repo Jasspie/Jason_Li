@@ -20,7 +20,7 @@ const StyledButton = styled.div`
   border: 2px solid ${({ theme }) => theme.bw};
   border-radius: 5px;
   padding: 1rem 2rem 1rem 2rem;
-  font-family: Source Sans Pro, sans-serif;
+  font-family: Inter, sans-serif;
   font-weight: 600;
   font-size: 2rem;
   cursor: pointer;

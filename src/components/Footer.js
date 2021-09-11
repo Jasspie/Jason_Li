@@ -7,8 +7,8 @@ import { media } from "../themes/Media"
 
 const StyledFooter = styled.h5`
   color: ${({ theme }) => theme.text};
-  font-weight: 700;
-  font-family: Source Sans Pro, sans-serif;
+  font-weight: 600;
+  font-family: Inter, sans-serif;
   @media ${media.md} {
     text-align: center;
     margin-right: 1rem;

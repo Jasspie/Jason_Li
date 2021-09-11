@@ -17,7 +17,7 @@ export const PROJECTS = [
   {
     title: "ENergize",
     description:
-      "Originally as an idea for a Hackathon, ENergize ended up being a project I developed over the summer. It's a full stack application that allows users to create recipes and track them in terms of its environmental sustainability and nutritional benefits. Try creating a recipe and see the ENergize score you'll receive.",
+      "Originally as an idea for a Hackathon, ENergize ended up as a project I developed over the summer. It's a full stack application that allows users to create recipes and track them in terms of its environmental sustainability and nutritional benefits. Try creating a recipe and see the ENergize score you'll receive.",
     stack: ["React", "Firebase", "Python", "OpenAI API", "Beautiful Soup"],
     repo: "https://github.com/Jasspie/ENergize",
     link: "https://energize.netlify.app/",

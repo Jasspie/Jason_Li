@@ -42,7 +42,7 @@ const rectangle = {
     width: "0rem",
   },
   animate: {
-    width: "8rem",
+    width: "7rem",
     transition: {
       delay: 0.3,
       duration: 0.7,

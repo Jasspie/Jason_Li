@@ -10,8 +10,9 @@ import { IconContext } from "react-icons"
 const SkillsTitle = styled.h2`
   opacity: ${props => (props.active ? 1 : 0.2)};
   color: ${({ theme }) => theme.name};
-  cursor: pointer;
+  // cursor: pointer;
   font-weight: 700;
+  font-family: Source Sans Pro, sans-serif;
   text-align: center;
   transition: opacity 0.3s linear;
 `
@@ -19,6 +20,7 @@ const SkillsTitle = styled.h2`
 const SkillsName = styled.h6`
   color: ${({ theme }) => theme.name};
   font-weight: 700;
+  font-family: Source Sans Pro, sans-serif;
   font-size: 80%;
   text-align: center;
   @media ${media.md} {
