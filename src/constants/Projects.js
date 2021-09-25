@@ -26,8 +26,16 @@ export const PROJECTS = [
   {
     title: "Shopperz",
     description:
-      "As a tech enthusiast, I created Shopperz, a MERN web application that serves as a mock e-commerce platform for users to purchase various devices. Through building this project, I learned how to apply Node.js and MongoDB towards authenticating users with JSON Web Tokens as well as how to handle payments with the Stripe API.",
-    stack: ["Node.js", "Express", "MongoDB", "Stripe API", "React", "Redux"],
+      "As a tech enthusiast, I created Shopperz, a MERN web application that serves as a mock e-commerce platform for users to purchase Apple devices. Through building this project, I learned how to apply Node.js and MongoDB towards authenticating users with JSON Web Tokens as well as how to handle payments with the Stripe API.",
+    stack: [
+      "React",
+      "Redux",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Stripe API",
+      "Postman",
+    ],
     repo: "https://github.com/Jasspie/Shopperz",
     image: Project3,
   },
